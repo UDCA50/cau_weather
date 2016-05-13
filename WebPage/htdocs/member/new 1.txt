@@ -1,0 +1,24 @@
+insert into member values('20101508', 'carbon14', '김정욱' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101509', 'carbon14', '김정순' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101510', 'carbon14', '김정개' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101511', 'carbon14', '김정철' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101530', 'carbon14', '김정필' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101550', 'carbon14', '김정팔' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20101540', 'carbon14', '김우욱' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
+insert into member values('20153508', 'carbon14', '김정지' 
+'doctor who?' ,'1508everyday@gmail.com',,1);
+
