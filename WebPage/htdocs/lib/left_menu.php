@@ -2,8 +2,8 @@
  			<img src="../img/title_left_menu.gif">
 		</div>
 		<ul>
-		<li>¾Ë¸²(±³Á÷¿ø)</li>
-		<li>¾Ë¸²(°ø»ç°ü¸®ÀÚ)</li>
-		<li>±â»ó¾Ë¸²</li>
-		<li>¹ö±×¸®Æ÷Æ®</li>
+		<li>ì•Œë¦¼(êµì§ì›)</li>
+		<li>ì•Œë¦¼(ê³µì‚¬ê´€ë¦¬ìž)</li>
+		<li>ê¸°ìƒì•Œë¦¼</li>
+		<li>ë²„ê·¸ë¦¬í¬íŠ¸</li>
 		</ul>

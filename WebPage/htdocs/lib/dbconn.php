@@ -1,6 +1,6 @@
 <?
     $connect=mysql_connect( "localhost", "caunic", "carbon14") or  
-        die( "SQL server¿¡ ¿¬°áÇÒ ¼ö ¾ø½À´Ï´Ù."); 
-
+        die( "SQL serverì— ì—°ê²°í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."); 
+	mysql_set_charset("UTF8", $connect);
     mysql_select_db("jung_db",$connect);
 ?>

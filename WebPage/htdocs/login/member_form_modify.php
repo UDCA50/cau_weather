@@ -4,7 +4,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head> 
-<meta charset="euc-kr">
+<meta charset="utf-8">
 <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/member.css" rel="stylesheet" type="text/css" media="all">
 <script>
@@ -26,35 +26,35 @@
    {
       if (!document.member_form.pass.value)
       {
-          alert("ºñ¹Ğ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");    
+          alert("ë¹„ë°€ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");    
           document.member_form.pass.focus();
           return;
       }
 
       if (!document.member_form.pass_confirm.value)
       {
-          alert("ºñ¹Ğ¹øÈ£È®ÀÎÀ» ÀÔ·ÂÇÏ¼¼¿ä");    
+          alert("ë¹„ë°€ë²ˆí˜¸í™•ì¸ì„ ì…ë ¥í•˜ì„¸ìš”");    
           document.member_form.pass_confirm.focus();
           return;
       }
 
       if (!document.member_form.name.value)
       {
-          alert("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä");    
+          alert("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš”");    
           document.member_form.name.focus();
           return;
       }
 
       if (!document.member_form.nick.value)
       {
-          alert("´Ğ³×ÀÓÀ» ÀÔ·ÂÇÏ¼¼¿ä");    
+          alert("ë‹‰ë„¤ì„ì„ ì…ë ¥í•˜ì„¸ìš”");    
           document.member_form.nick.focus();
           return;
       }
 
       if (!document.member_form.hp2.value || !document.member_form.hp3.value )
       {
-          alert("ÈŞ´ëÆù ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä");    
+          alert("íœ´ëŒ€í° ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”");    
           document.member_form.nick.focus();
           return;
       }
@@ -62,7 +62,7 @@
       if (document.member_form.pass.value != 
             document.member_form.pass_confirm.value)
       {
-          alert("ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.\n´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");    
+          alert("ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\në‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");    
           document.member_form.pass.focus();
           document.member_form.pass.select();
           return;
@@ -129,7 +129,7 @@
 	</div> <!-- end of col1 -->
 
 	<div id="col2">
-        <form  name="member_form" method="post" action="modify.php"> 
+        <form  name="member_form" method="post" action="modify.php" accept-charset="utf-8"> 
 		<div id="title">
 			<img src="../img/title_member_modify.gif">
 		</div>
@@ -138,13 +138,13 @@
 		<div id="form_join">
 			<div id="join1">
 			<ul>
-			<li>* ¾ÆÀÌµğ</li>
-			<li>* ºñ¹Ğ¹øÈ£</li>
-			<li>* ºñ¹Ğ¹øÈ£ È®ÀÎ</li>
-			<li>* ÀÌ¸§</li>
-			<li>* ´Ğ³×ÀÓ</li>
-			<li>* ÈŞ´ëÆù</li>
-			<li>&nbsp;&nbsp;&nbsp;ÀÌ¸ŞÀÏ</li>
+			<li>* ì•„ì´ë””</li>
+			<li>* ë¹„ë°€ë²ˆí˜¸</li>
+			<li>* ë¹„ë°€ë²ˆí˜¸ í™•ì¸</li>
+			<li>* ì´ë¦„</li>
+			<li>* ë‹‰ë„¤ì„</li>
+			<li>* íœ´ëŒ€í°</li>
+			<li>&nbsp;&nbsp;&nbsp;ì´ë©”ì¼</li>
 			</ul>
 			</div>
 			<div id="join2">
@@ -161,7 +161,7 @@
 			</ul>
 			</div>
 			<div class="clear"></div>
-			<div id="must"> * ´Â ÇÊ¼ö ÀÔ·ÂÇ×¸ñÀÔ´Ï´Ù.^^</div>
+			<div id="must"> * ëŠ” í•„ìˆ˜ ì…ë ¥í•­ëª©ì…ë‹ˆë‹¤.^^</div>
 		</div>
 
 		<div id="button"><a href="#"><img src="../img/button_save.gif"  onclick="check_input()"></a>&nbsp;&nbsp;

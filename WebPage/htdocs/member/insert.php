@@ -1,10 +1,10 @@
-<meta charset="euc-kr">
+<meta charset="utf-8">
 <?
    $hp = $hp1."-".$hp2."-".$hp3;
    $email = $email1."@".$email2;
 
-   $regist_day = date("Y-m-d (H:i)");  // ÇöÀçÀÇ '³â-¿ù-ÀÏ-½Ã-ºĞ'À» ÀúÀå
-   $ip = $REMOTE_ADDR;      // ¹æ¹®ÀÚÀÇ IP ÁÖ¼Ò¸¦ ÀúÀå
+   $regist_day = date("Y-m-d (H:i)");  // í˜„ì¬ì˜ 'ë…„-ì›”-ì¼-ì‹œ-ë¶„'ì„ ì €ì¥
+   $ip = $REMOTE_ADDR;      // ë°©ë¬¸ìì˜ IP ì£¼ì†Œë¥¼ ì €ì¥
 
    include "../lib/dbconn.php";       // db connect
 
@@ -15,21 +15,21 @@
    if($exist_id) {
      echo("
            <script>
-             window.alert('ÇØ´ç ¾ÆÀÌµğ°¡ Á¸ÀçÇÕ´Ï´Ù.')
+             window.alert('í•´ë‹¹ ì•„ì´ë””ê°€ ì¡´ì¬í•©ë‹ˆë‹¤.')
              history.go(-1)
            </script>
          ");
          exit;
    }
    else
-   {            // ·¹ÄÚµå »ğÀÔ ¸í·ÉÀ» $sql¿¡ ÀÔ·Â
+   {            // ë ˆì½”ë“œ ì‚½ì… ëª…ë ¹ì„ $sqlì— ì…ë ¥
 	    $sql = "insert into member(id, pass, name, nick, hp, email, regist_day, level) ";
 		$sql .= "values('$id', '$pass', '$name', '$nick', '$hp', '$email', '$regist_day', 9)";
 
-		mysql_query($sql, $connect);  // $sql ¿¡ ÀúÀåµÈ ¸í·É ½ÇÇà
+		mysql_query($sql, $connect);  // $sql ì— ì €ì¥ëœ ëª…ë ¹ ì‹¤í–‰
    }
 
-   mysql_close();                // DB ¿¬°á ²÷±â
+   mysql_close();                // DB ì—°ê²° ëŠê¸°
    echo "
 	   <script>
 	    location.href = '../index.php';

@@ -1,21 +1,21 @@
 <?
 	session_start();
 ?>
-<meta charset="euc-kr">
+<meta charset="utf-8">
 <?
    $hp = $hp1."-".$hp2."-".$hp3;
    $email = $email1."@".$email2;
 
-   $regist_day = date("Y-m-d (H:i)");  // ÇöÀçÀÇ '³â-¿ù-ÀÏ-½Ã-ºÐ'À» ÀúÀå
+   $regist_day = date("Y-m-d (H:i)");  // í˜„ìž¬ì˜ 'ë…„-ì›”-ì¼-ì‹œ-ë¶„'ì„ ì €ìž¥
 
-   include "../lib/dbconn.php";       // dconn.php ÆÄÀÏÀ» ºÒ·¯¿È
+   include "../lib/dbconn.php";       // dconn.php íŒŒì¼ì„ ë¶ˆëŸ¬ì˜´
 
    $sql = "update member set pass='$pass', name='$name' , ";
    $sql .= "nick='$nick', hp='$hp', email='$email', regist_day='$regist_day' where id='$userid'";
 
-   mysql_query($sql, $connect);  // $sql ¿¡ ÀúÀåµÈ ¸í·É ½ÇÇà
+   mysql_query($sql, $connect);  // $sql ì— ì €ìž¥ëœ ëª…ë ¹ ì‹¤í–‰
 
-   mysql_close();                // DB ¿¬°á ²÷±â
+   mysql_close();                // DB ì—°ê²° ëŠê¸°
    echo "
 	   <script>
 	    location.href = '../index.php';

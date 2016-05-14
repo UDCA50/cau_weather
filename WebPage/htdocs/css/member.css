@@ -100,7 +100,9 @@
 
 #content #col2 #button {
 	text-align:right;
-	margin-top:20px;
+	margin-top:5px;
+	margin-bottom:5px;
+
 	margin-right:20px;
 }
 
@@ -178,4 +180,15 @@
 #login2 #join_button {
 	margin-top:20px;
 	margin-left:30px;
+}
+
+#agreement{
+	margin-left:20px;
+	margin-right:20px;
+	font-size: 10px;
+	width: 95%;
+	margin-right:20px;
+	margin-bottom:50px;
+	font-style: oblique;
+	border:solid 1px #dddddd;
 }
