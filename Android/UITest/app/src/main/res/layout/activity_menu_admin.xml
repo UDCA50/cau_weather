@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_gravity = "center"
+    android:orientation="vertical">
+    <TextView
+        android:text = "관리자님 환영합니다"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id = "@+id/menu_admin_s"
+        android:onClick = "onClick"
+        android:layout_width = "110dp"
+        android:layout_height = "match_parent"
+        android:text = "센서정보"/>
+    <Button
+        android:id = "@+id/menu_admin_l"
+        android:onClick = "onClick"
+        android:layout_width = "110dp"
+        android:layout_height = "match_parent"
+        android:text = "데이터로그"/>
+
+</LinearLayout>

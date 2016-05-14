@@ -9,11 +9,11 @@
 			echo "<div id='datasheet'>";
 			echo "<table>";
 			echo "<tr>";
-			echo "<td>��ȣ</td>";
-			echo "<td>����</td>";
-			echo "<td>�µ�</td>";
-			echo "<td>��ġ</td>";
-			echo "<td>�ð�</td></tr>";
+			echo "<td>번호</td>";
+			echo "<td>습도</td>";
+			echo "<td>온도</td>";
+			echo "<td>위치</td>";
+			echo "<td>시간</td></tr>";
 		
 			for ($i=0; $i<$total_record ; $i++){
 				mysql_data_seek($result, $i);       

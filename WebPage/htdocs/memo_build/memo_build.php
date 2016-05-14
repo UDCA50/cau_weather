@@ -1,24 +1,24 @@
 <? 
 	session_start(); 
 	
-	$scale=5;			// «— »≠∏Èø° «•Ω√µ«¥¬ ±€ ºˆ
+	$scale=5;			// Ìïú ÌôîÎ©¥Ïóê ÌëúÏãúÎêòÎäî Í∏Ä Ïàò
 	include "../lib/dbconn.php";
 
 	$sql = "select * from memo_build order by num desc";
 	$result = mysql_query($sql, $connect);
 
-	$total_record = mysql_num_rows($result); // ¿¸√º ±€ ºˆ
+	$total_record = mysql_num_rows($result); // Ï†ÑÏ≤¥ Í∏Ä Ïàò
 
-	// ¿¸√º ∆‰¿Ã¡ˆ ºˆ($total_page) ∞ËªÍ 
+	// Ï†ÑÏ≤¥ ÌéòÏù¥ÏßÄ Ïàò($total_page) Í≥ÑÏÇ∞ 
 	if ($total_record % $scale == 0)     
 		$total_page = floor($total_record/$scale);      
 	else
 		$total_page = floor($total_record/$scale) + 1; 
  
-	if (!$page)                 // ∆‰¿Ã¡ˆπ¯»£($page)∞° 0 ¿œ ∂ß
-		$page = 1;              // ∆‰¿Ã¡ˆ π¯»£∏¶ 1∑Œ √ ±‚»≠
+	if (!$page)                 // ÌéòÏù¥ÏßÄÎ≤àÌò∏($page)Í∞Ä 0 Ïùº Îïå
+		$page = 1;              // ÌéòÏù¥ÏßÄ Î≤àÌò∏Î•º 1Î°ú Ï¥àÍ∏∞Ìôî
  
-	// «•Ω√«“ ∆‰¿Ã¡ˆ($page)ø° µ˚∂Û $start ∞ËªÍ  
+	// ÌëúÏãúÌï† ÌéòÏù¥ÏßÄ($page)Ïóê Îî∞Îùº $start Í≥ÑÏÇ∞  
 	$start = ($page - 1) * $scale;      
 
 	$number = $total_record - $start;
@@ -26,7 +26,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head> 
-<meta charset="euc-kr">
+<meta charset="utf-8">
 <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/memo.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -56,7 +56,7 @@
 
 		<div id="memo_row1">
        	<form  name="memo_form" method="post" action="insert.php"> 
-			<div id="memo_writer"><span >¢π <?= $usernick ?></span></div>
+			<div id="memo_writer"><span >‚ñ∑ <?= $usernick ?></span></div>
 			<div id="memo1"><textarea rows="6" cols="95" name="content"></textarea></div>
 			<div id="memo2"><input type="image" src="../img/memo_button.gif"></div>
 		</form>	
@@ -83,7 +83,7 @@
 		<li id="writer_title4"> 
 		      <? 
 					if($userid=="admin" || $userid==$memo_id)
-			          echo "<a href='delete.php?num=$memo_num'>[ªË¡¶]</a>"; 
+			          echo "<a href='delete.php?num=$memo_num'>[ÏÇ≠Ï†ú]</a>"; 
 			  ?>
 		</li>
 		</ul>
@@ -91,7 +91,7 @@
 		<div id="memo_content"><?= $memo_content ?>
 		</div>
 		<div id="ripple"> 
-			<div id="ripple1">µ°±€</div>
+			<div id="ripple1">ÎçßÍ∏Ä</div>
 			<div id="ripple2">
 <?
 	    $sql = "select * from memo_build_ripple where parent='$memo_num'";
@@ -112,7 +112,7 @@
 				<li id="mdi_del">
 					<? 
 						if($userid=="admin" || $userid==$ripple_id)
-				            echo "<a href='delete_build_ripple.php?num=$ripple_num'>ªË¡¶</a>";
+				            echo "<a href='delete_build_ripple.php?num=$ripple_num'>ÏÇ≠Ï†ú</a>";
 					?>
 				</li>
 				</ul>
@@ -139,12 +139,12 @@
 	 }
 	 mysql_close();
 ?>
-			<div id="page_num"> ¢∏ ¿Ã¿¸ &nbsp;&nbsp;&nbsp;&nbsp; 
+			<div id="page_num"> ‚óÄ Ïù¥Ï†Ñ &nbsp;&nbsp;&nbsp;&nbsp; 
 <?
-   // ∞‘Ω√∆« ∏Ò∑œ «œ¥‹ø° ∆‰¿Ã¡ˆ ∏µ≈© π¯»£ √‚∑¬
+   // Í≤åÏãúÌåê Î™©Î°ù ÌïòÎã®Ïóê ÌéòÏù¥ÏßÄ ÎßÅÌÅ¨ Î≤àÌò∏ Ï∂úÎ†•
    for ($i=1; $i<=$total_page; $i++)
    {
-		if ($page == $i)     // «ˆ¿Á ∆‰¿Ã¡ˆ π¯»£ ∏µ≈© æ»«‘
+		if ($page == $i)     // ÌòÑÏû¨ ÌéòÏù¥ÏßÄ Î≤àÌò∏ ÎßÅÌÅ¨ ÏïàÌï®
 		{
 			echo "<b> $i </b>";
 		}
@@ -154,7 +154,7 @@
 		}      
    }
 ?>			
-			&nbsp;&nbsp;&nbsp;&nbsp;¥Ÿ¿Ω ¢∫</div>
+			&nbsp;&nbsp;&nbsp;&nbsp;Îã§Ïùå ‚ñ∂</div>
 		 </div> <!-- end of ripple -->
 	</div> <!-- end of col2 -->
   </div> <!-- end of content -->

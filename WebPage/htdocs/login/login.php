@@ -1,14 +1,15 @@
+
+<meta charset="utf-8"/>
 <?
            session_start();
 ?>
-<meta charset="euc-kr">
 <?
-   // ����ȭ�鿡�� �̸��� �Էµ��� �ʾ����� "�̸��� �Է��ϼ���"
-   // �޽��� ���
+   // 이전화면에서 이름이 입력되지 않았으면 "이름을 입력하세요"
+   // 메시지 출력
    if(!$id) {
      echo("
            <script>
-             window.alert('���̵� �Է��ϼ���.')
+             window.alert('아이디를 입력하세요.')
              history.go(-1)
            </script>
          ");
@@ -18,7 +19,7 @@
    if(!$pass) {
      echo("
            <script>
-             window.alert('��й�ȣ�� �Է��ϼ���.')
+             window.alert('비밀번호를 입력하세요.')
              history.go(-1)
            </script>
          ");
@@ -36,7 +37,7 @@
    {
      echo("
            <script>
-             window.alert('��ϵ��� ���� ���̵��Դϴ�.')
+             window.alert('등록되지 않은 아이디입니다.')
              history.go(-1)
            </script>
          ");
@@ -51,7 +52,7 @@
         {
            echo("
               <script>
-                window.alert('��й�ȣ�� Ʋ���ϴ�.')
+                window.alert('비밀번호가 틀립니다.')
                 history.go(-1)
               </script>
            ");

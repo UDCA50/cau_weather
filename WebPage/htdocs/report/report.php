@@ -10,7 +10,7 @@ Transitional//EN"
 <html>
 <head> 
 <meta http-equiv="Content-Type" content="text/html; 
-charset=euc-kr">
+charset=utf-8">
 <link href="../css/common.css" rel="stylesheet" 
 type="text/css" 
 media="all">
@@ -42,6 +42,9 @@ media="all">
 			<div id="title">
 				<img src="../img/title_report.gif">
 			</div>
+			관리자 연락처<br>
+			02-820-5301 (상담가능시간 09:00~18:00)<br>
+			1508everyday@gmail.com <br>
 		</div>
 	</div>
 </div>

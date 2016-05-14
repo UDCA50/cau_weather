@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="c207">
+        <item>101</item>
+        <item>414</item>
+        <item>514</item>
+        <item>515</item>
+    </string-array>
+
+    <string-array name="c208">
+        <item>102</item>
+        <item>309</item>
+    </string-array>
+</resources>
