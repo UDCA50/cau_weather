@@ -1,7 +1,7 @@
 body {
 	margin:0;
 	padding:0;
-	background-image:url(../img/main_bg.jpg);
+	background-image:url(../img/main_bg.gif);
 	background-repeat:repeat-x;
 	font-family:"µ¸¿ò";
 	font-size:12px;
@@ -43,6 +43,7 @@ ul, li {
 	margin-left: auto;
 	min-height:600px;
 
+/*	border:solid 1px #00ff00; */
 }
 
 #header {
@@ -69,12 +70,12 @@ ul, li {
 }
 
 #menu {
-	margin-top:3px;
+	margin-top:5px;
 }
 
 .menus {
 	float:left;
-	margin-left:80px;
+	margin-left:100px;
 	
 }
 

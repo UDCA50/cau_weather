@@ -40,11 +40,11 @@
 		<div id="weather_row1">
 			<div id="b_raw_1">
 				<input id="build_button_1" type="image" name="b_num" value="building_1" 
-src="../img/building_1.jpg"/>
+src="../img/building_1.gif"/>
 				<input id="build_button_2" type="image" name="b_num" value="building_2" 
-src="../img/building_2.jpg"/> 
+src="../img/building_2.gif"/> 
 				<input id="build_button_3" type="image" name="b_num" value="building_3" 
-src="../img/building_3.jpg"/>
+src="../img/building_3.gif"/>
 			</div>
 			
 		</div>
@@ -52,11 +52,11 @@ src="../img/building_3.jpg"/>
 		<div id="weather_row2">	
 			<div id="b_raw_2">
 				<input id="build_button_4" type="image" name="b_num" value="building_4" 
-src="../img/building_4.jpg"/>
+src="../img/building_4.gif"/>
 				<input id="build_button_5" type="image" name="b_num" value="building_5" 
-src="../img/building_5.jpg"/>
+src="../img/building_5.gif"/>
 				<input id="build_button_6" type="image" name="b_num" value="building_6" 
-src="../img/building_6.jpg"/>
+src="../img/building_6.gif"/>
 			</div>
 			
 		</div>

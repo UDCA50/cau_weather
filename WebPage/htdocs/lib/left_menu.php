@@ -2,8 +2,11 @@
  			<img src="../img/title_left_menu.gif">
 		</div>
 		<ul>
-		<li>알림(교직원)</li>
-		<li>알림(공사관리자)</li>
-		<li>기상알림</li>
-		<li>버그리포트</li>
+		<li>낙서장</li>
+		<li>가입인사</li>
+		<li>연주회소개</li>
+		<li>자료실</li>
+		<li>자유게시판</li>
+		<li>레슨문의</li>
+		<li>설문조사</li>
 		</ul>
