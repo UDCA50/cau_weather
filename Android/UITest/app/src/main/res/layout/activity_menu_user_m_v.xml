@@ -18,7 +18,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@drawable/user_m_title"/>
+                android:src="@drawable/user_m_view"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,71 +50,90 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2">
+            android:layout_weight="2"
+            android:orientation="vertical">
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:stretchColumns="1">
 
-                <TableRow>
-
+                <TableRow
+                    android:gravity="center_vertical">
                     <TextView
-                        android:text = "선택"
+                        android:text = "제목"
                         android:textSize="15dp"
                         android:textColor="#ffffff"
                         android:gravity="center"
                         android:padding="10dp"/>
-
                     <TextView
-                        android:text = "Subject"
+                        android:id="@+id/msgv_subject"
                         android:textSize="15dp"
+                        android:layout_width="190dp"
+                        android:layout_height="35dp"
                         android:textColor="#ffffff"
-                        android:gravity="center"
-                        android:padding="10dp"/>
-
-                    <TextView
-                        android:text = "Writer"
-                        android:textSize="15dp"
-                        android:textColor="#ffffff"
-                        android:gravity="center"
-                        android:padding="10dp"/>
-
-                    <TextView
-                        android:text = "Date"
-                        android:textSize="15dp"
-                        android:textColor="#ffffff"
-                        android:gravity="center"
                         android:padding="10dp"/>
                 </TableRow>
                 <TableRow
-                    android:id="@+id/msg1"
-                    android:onClick="msg_Action">
-
-                    <CheckBox />
-
+                    android:gravity="center_vertical">
                     <TextView
-                        android:id="@+id/sub1"
-                        android:text = "센서는 어디에.."
+                        android:text = "내용"
                         android:textSize="15dp"
                         android:textColor="#ffffff"
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        android:padding="10dp"/>
 
                     <TextView
-                        android:id="@+id/writer1"
-                        android:text = "Guest"
-                        android:textSize="15dp"
+                        android:layout_width="190dp"
+                        android:layout_height="200dp"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
                         android:textColor="#ffffff"
-                        android:gravity="center"/>
+                        android:layout_column="1" />
+                </TableRow>
 
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1">
+                <TableRow
+                    android:gravity="center_vertical">
                     <TextView
-                        android:id="@+id/date1"
-                        android:text = "05-14"
+                        android:text = "대상"
                         android:textSize="15dp"
                         android:textColor="#ffffff"
-                        android:gravity="center"/>
+                        android:gravity="center"
+                        android:padding="10dp"/>
+                    <RadioGroup
+                        android:id="@+id/write_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="학생" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="공사관리자"/>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="교직원"/>
+                    </RadioGroup>
                 </TableRow>
             </TableLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -131,22 +150,18 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <ImageView
-                    android:id="@+id/m_write"
-                    android:onClick="msg_Action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/write"/>
+                    android:src="@drawable/confirm"/>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <ImageView
-                    android:id="@+id/m_modify"
-                    android:onClick="msg_Action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/modify"/>
+                    android:src="@drawable/refresh"/>
 
             </LinearLayout>
             <LinearLayout
@@ -156,7 +171,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/delete"/>
+                    android:src="@drawable/cancel"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -171,6 +186,5 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="0.05">
-
     </LinearLayout>
 </LinearLayout>

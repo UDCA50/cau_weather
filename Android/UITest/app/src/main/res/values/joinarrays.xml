@@ -2,7 +2,8 @@
 <resources>
 
     <string-array name="join_cat">
-        <item>사용자</item>
+        <item>학생</item>
+        <item>교직원</item>
         <item>관리자</item>
     </string-array>
 

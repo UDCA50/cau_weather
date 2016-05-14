@@ -100,6 +100,7 @@
             android:layout_weight="1.3"
             android:gravity="center_horizontal">
             <ImageView
+                android:id="@+id/smile"
                 android:layout_width="115dp"
                 android:layout_height="115dp"
                 android:layout_gravity="bottom"
@@ -112,10 +113,11 @@
             android:layout_weight="1"
             android:gravity="center_horizontal">
             <TextView
+                android:id="@+id/humidity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="30"
+                android:text="50"
                 android:textColor="#ffffff"
                 android:textSize="90dp"/>
 
@@ -126,10 +128,11 @@
             android:layout_weight="1"
             android:gravity="center_horizontal">
             <TextView
+                android:id="@+id/temperature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="30"
+                android:text="21"
                 android:textColor="#ffffff"
                 android:textSize="90dp"/>
         </LinearLayout>

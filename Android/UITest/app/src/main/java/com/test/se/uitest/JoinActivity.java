@@ -19,6 +19,7 @@ public class JoinActivity extends Activity {
         Spinner joinCat = (Spinner)findViewById(R.id.join_cat);
         ArrayAdapter joinCatAdapter = ArrayAdapter.createFromResource(this, R.array.join_cat, android.R.layout.simple_spinner_item);
         joinCatAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
         joinCat.setAdapter(joinCatAdapter);
 
         Spinner joinGender = (Spinner)findViewById(R.id.join_gender);

@@ -35,6 +35,8 @@
                     android:screenOrientation="landscape"/>
         <activity android:name =".MenuActivity_User_M_W"
                     android:screenOrientation="landscape"/>
+        <activity android:name =".MenuActivity_User_M_V"
+                     android:screenOrientation="landscape"/>
         <activity android:name =".MenuActivity_User_M_M"
                     android:screenOrientation="landscape"/>
         <activity android:name =".MenuActivity_Admin"/>
