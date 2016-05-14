@@ -21,6 +21,8 @@
                    android:screenOrientation="landscape"/>
         <activity android:name =".JoinActivity"
                    android:screenOrientation="landscape"/>
+        <activity android:name =".JoinActivity_A"
+                    android:screenOrientation="landscape"/>
         <activity android:name =".MenuActivity_User"
                     android:screenOrientation="landscape"/>
         <activity android:name =".MenuActivity_User_W"

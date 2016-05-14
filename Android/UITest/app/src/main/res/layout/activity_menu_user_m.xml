@@ -127,7 +127,7 @@
                 android:layout_weight="1">
                 <ImageView
                     android:id="@+id/m_write"
-                    android:onClick="msg_write_Action"
+                    android:onClick="msg_Action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/write"/>
@@ -137,6 +137,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1">
                 <ImageView
+                    android:id="@+id/m_modify"
+                    android:onClick="msg_Action"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/modify"/>

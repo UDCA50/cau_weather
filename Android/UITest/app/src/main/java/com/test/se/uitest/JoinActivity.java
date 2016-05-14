@@ -26,10 +26,19 @@ public class JoinActivity extends Activity {
         joinGenderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         joinGender.setAdapter(joinGenderAdapter);
 
+
         /////////////////////////////////////////////////////////////////////////////////////
         EditText input_id = (EditText)findViewById(R.id.join_id);
         String m_id = input_id.getText().toString();
 
+    }
+    public void join_aggr_Action(View v) {
+        switch(v.getId()){
+            case R.id.join_agreementView:
+                Intent intent1 = new Intent(this, JoinActivity_A.class);
+                startActivity(intent1);
+                break;
+        }
     }
 }
 

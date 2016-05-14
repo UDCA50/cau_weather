@@ -70,7 +70,7 @@
                         android:textSize="15dp"
                         android:layout_width="190dp"
                         android:layout_height="35dp"
-                        android:textColor="#ffffff"
+                        android:textColor="#7dbb44"
                         android:padding="10dp"/>
                 </TableRow>
                 <TableRow
@@ -87,6 +87,7 @@
                         android:layout_height="200dp"
                         android:inputType="textMultiLine"
                         android:ems="10"
+                        android:textColor="#7dbb44"
                         android:layout_column="1" />
                 </TableRow>
 
@@ -119,7 +120,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="교직원" />
+                            android:text="학생" />
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
