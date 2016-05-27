@@ -1,4 +1,4 @@
-<? 
+<?php
 	session_start(); 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,8 +7,11 @@
 <meta charset="utf-8">
 <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/member.css" rel="stylesheet" type="text/css" media="all">
-<script>
-   function check_id()
+<script type='text/javascript'>
+   
+
+	//this way is pass variable by get method
+function check_id()
    {
      window.open("check_id.php?id=" + document.member_form.id.value,
          "IDcheck",
@@ -102,17 +105,17 @@
 <body>
 <div id="wrap">
   <div id="header">
-    <? include "../lib/top_login2.php"; ?>
+    <?php include "../lib/top_login2.php"; ?>
   </div>  <!-- end of header -->
 
   <div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
+	<?php include "../lib/top_menu2.php"; ?>
   </div>  <!-- end of menu --> 
 
   <div id="content">
 	<div id="col1">
 		<div id="left_menu">
-<?
+<?php
 			include "../lib/left_menu.php";
 ?>
 		</div>
@@ -138,7 +141,9 @@
 			</div>
 			<div id="join2">
 			<ul>
-			<li><div id="id1"><input type="text" name="id"></div><div id="id2"><a href="#"><img src="../img/check_id.gif" onclick="check_id()"></a></div><div id="id3">4~12자의 영문 소문자, 숫자와 특수기호(_) 만 사용할 수 있습니다.</div></li>
+			<li><div id="id1"><input type="text" name="id"></div>
+			<div id="id2"><a href="#"><img src="../img/check_id.gif" onclick="check_id()"></a></div>
+			<div id="id3">4~12자의 영문 소문자, 숫자와 특수기호(_) 만 사용할 수 있습니다.</div></li>
 			<li><input type="password" name="pass"></li>
 			<li><input type="password" name="pass_confirm"></li>
 			<li><input type="text" name="name"></li>

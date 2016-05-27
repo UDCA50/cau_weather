@@ -1,6 +1,17 @@
 <?
    session_start();
+
+	$userid=$_SESSION['userid'];
+	$num=$_POST['num'];
+	$name=$_SESSION['name'];
+	$nick=$_SESSION['nick'];
+	$ripple_content=$_POST['ripple_content'];
+	
+
+	
 ?>
+
+
 <meta charset="utf-8">
 <?
    if(!$userid) {

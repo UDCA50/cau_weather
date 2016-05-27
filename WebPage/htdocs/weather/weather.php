@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 ?>
 
@@ -13,11 +13,11 @@
 <body>
 <div id="wrap">
 	<div id="header">
-    <? include "../lib/top_login2.php"; ?>
+    <?php include "../lib/top_login2.php"; ?>
 	</div>  <!-- end of headefr -->
 
 	<div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
+	<?php include "../lib/top_menu2.php"; ?>
 	</div>  <!-- end of menu --> 
 	
 	<div  id="content">

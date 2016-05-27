@@ -92,12 +92,12 @@
 </head>
 <?
     include "../lib/dbconn.php";
-
+	$connect = $_SESSION['connect'];
+	$userid = $_SESSION['userid'];
     $sql = "select * from member where id='$userid'";
     $result = mysql_query($sql, $connect);
 
     $row = mysql_fetch_array($result);
-
     $hp = explode("-", $row[hp]);		#parsing
     $hp1 = $hp[0];
     $hp2 = $hp[1];

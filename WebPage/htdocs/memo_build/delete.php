@@ -1,6 +1,7 @@
 <?
-   include "../lib/dbconn.php";
 
+   include "../lib/dbconn.php";
+	$num=$_GET['num_build'];
    $sql = "delete from memo_build where num = $num";
    mysql_query($sql, $connect);
 
@@ -12,4 +13,3 @@
 	   </script>
 	";
 ?>
-

@@ -2,7 +2,18 @@
    session_start();
 ?>
 <meta charset="utf-8">
+
+
+
 <?
+	$userid =$_SESSION['userid'];
+	$name=$_SESSION['name'];
+	$nick=$_SESSION['nick'];
+	$ripple_content=$_POST['ripple_content'];
+	$connect=$_SESSION['connect'];
+	$num=$_POST['num'];
+
+
    if(!$userid) {
      echo("
 	   <script>

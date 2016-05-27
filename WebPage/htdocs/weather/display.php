@@ -1,8 +1,9 @@
-<?
+<?php
 	session_start();
 	
 	include "../lib/selectable.php";
 	include "../lib/printable.php";
+	$b_num =$_POST[b_num];
 	?>
 	
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -21,17 +22,17 @@ media="all">
 <body>
 <div id="wrap">
 	<div id="header">
-    <? include "../lib/top_login2.php"; ?>
+    <?php include "../lib/top_login2.php"; ?>
 	</div>  <!-- end of header -->
 
 	<div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
+	<?php include "../lib/top_menu2.php"; ?>
 	</div>  <!-- end of menu --> 
 
 	<div  id="content">
 		<div id="col1">
 			<div id="left_menu">		
-<?
+<?php
 	include "../lib/left_menu.php";
 ?>	
 			</div>
@@ -42,7 +43,7 @@ media="all">
 			</div>
 			
 			<!-- access to Sensor Network-->	
-			<?
+			<?php
 			$connect_data=mysql_connect( "localhost", "root", "carbon14");
 			mysql_select_db("jung_db",$connect_data);
 			

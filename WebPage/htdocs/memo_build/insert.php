@@ -1,6 +1,13 @@
 <? session_start(); ?>
 <meta charset="utf-8">
 <?
+	$connect=$_SESSION['connect'];
+	$userid=$_SESSION['userid'];
+	$name=$_SESSION['name'];
+	$nick=$_SESSION['nick'];
+
+	$content=$_POST['content'];
+
 	if(!$userid) {
 		echo("
 		<script>

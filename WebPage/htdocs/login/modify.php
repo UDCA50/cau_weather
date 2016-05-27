@@ -3,6 +3,19 @@
 ?>
 <meta charset="utf-8">
 <?
+  $connect = $_SESSION['connect'];
+  $userid = $_SESSION['userid'];
+  $hp1 = $_POST['hp1'];
+  $hp2 = $_POST['hp2'];
+  $hp3 = $_POST['hp3'];
+  
+  $email1 = $_POST['email1'];
+  $email2 = $_POST['email2']; 
+
+  $nick = $_POST['nick'];
+  $name = $_POST['name'];
+  $pass = $_POST['pass'];
+
    $hp = $hp1."-".$hp2."-".$hp3;
    $email = $email1."@".$email2;
 

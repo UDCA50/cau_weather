@@ -3,7 +3,8 @@
 	
 	$scale=5;			// 한 화면에 표시되는 글 수
 	include "../lib/dbconn.php";
-
+	$connect=$_SESSION['connect'];
+	$userid=$_SESSION['userid'];
 	$sql = "select * from memo_build order by num desc";
 	$result = mysql_query($sql, $connect);
 
@@ -83,7 +84,7 @@
 		<li id="writer_title4"> 
 		      <? 
 					if($userid=="admin" || $userid==$memo_id)
-			          echo "<a href='delete.php?num=$memo_num'>[삭제]</a>"; 
+			          echo "<a href='delete.php?num_build=$memo_num'>[삭제]</a>"; 
 			  ?>
 		</li>
 		</ul>
