@@ -5,8 +5,9 @@
 	include "../lib/dbconn.php";
 
 	$sql = "select * from memo order by num desc";
+	$connect=$_SESSION['connect'];
 	$result = mysql_query($sql, $connect);
-
+	$userid = $_SESSION['userid'];
 	$total_record = mysql_num_rows($result); // 전체 글 수
 
 	// 전체 페이지 수($total_page) 계산 
@@ -25,8 +26,9 @@
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head> 
 <meta charset="utf-8">
+
+<head> 
 <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/memo.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -55,7 +57,7 @@
 		</div>
 
 		<div id="memo_row1">
-       	<form  name="memo_form" method="post" action="insert.php"> 
+       	<form  name="memo_form" method="post" action="insert.php" accept-charset="UTF-8"> 
 			<div id="memo_writer"><span >▷ <?= $usernick ?></span></div>
 			<div id="memo1"><textarea rows="6" cols="95" name="content"></textarea></div>
 			<div id="memo2"><input type="image" src="../img/memo_button.gif"></div>

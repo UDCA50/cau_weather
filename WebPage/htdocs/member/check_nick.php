@@ -1,3 +1,11 @@
+<?php session_start();  
+
+
+$nick=$_GET['nick'];
+?>
+
+
+
 <meta charset="utf-8">
 <?
    if(!$nick) 

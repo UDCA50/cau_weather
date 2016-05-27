@@ -1,5 +1,5 @@
 	
-	<?
+	<?php
 	function printable($connect_data, $sql_query){
 	
 			mysql_select_db("jung_db",$connect_data);

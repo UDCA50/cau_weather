@@ -1,8 +1,10 @@
-<? session_start(); ?>
+<?php session_start(); ?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head> 
 <meta charset="utf-8">
+
 <link href="../css/common.css" rel="stylesheet" type="text/css" media="all">
 <link href="../css/member.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -27,7 +29,7 @@
 	</div> <!-- end of col1 -->
 
 	<div id="col2">
-        <form  name="member_form" method="post" action="login.php"> 
+        <form name="member_form" method="post" action="login.php" accept-charset="UTF-8"> 
 		<div id="title">
 			<img src="../img/title_login.gif">
 		</div>
@@ -49,12 +51,12 @@
 					</div>
 					<div id="id_pw_input">
 						<ul>
-						<li><input type="text" name="id" class="login_input"></li>
+						<li><input type="text" name="id_log" class="login_input"></li>
 						<li><input type="password" name="pass" class="login_input"></li>
 						</ul>						
 					</div>
 					<div id="login_button">
-						<input type="image" src="../img/login_button.gif">
+						<input type="submit" src="../img/login_button.gif">
 					</div>
 				</div>
 				<div class="clear"></div>

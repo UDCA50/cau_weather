@@ -2,11 +2,8 @@
  			<img src="../img/title_left_menu.gif">
 		</div>
 		<ul>
-		<li>³«¼­Àå</li>
-		<li>°¡ÀÔÀÎ»ç</li>
-		<li>¿¬ÁÖÈ¸¼Ò°³</li>
-		<li>ÀÚ·á½Ç</li>
-		<li>ÀÚÀ¯°Ô½ÃÆÇ</li>
-		<li>·¹½¼¹®ÀÇ</li>
-		<li>¼³¹®Á¶»ç</li>
+		<li>ì•Œë¦¼(êµì§ì›)</li>
+		<li>ì•Œë¦¼(ê³µì‚¬ê´€ë¦¬ìž)</li>
+		<li>ê¸°ìƒì•Œë¦¼</li>
+		<li>ë²„ê·¸ë¦¬í¬íŠ¸</li>
 		</ul>

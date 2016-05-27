@@ -1,4 +1,4 @@
-<?
+<?php
 	session_start();
 ?>
 
@@ -13,11 +13,11 @@
 <body>
 <div id="wrap">
 	<div id="header">
-    <? include "../lib/top_login2.php"; ?>
+    <?php include "../lib/top_login2.php"; ?>
 	</div>  <!-- end of headefr -->
 
 	<div id="menu">
-	<? include "../lib/top_menu2.php"; ?>
+	<?php include "../lib/top_menu2.php"; ?>
 	</div>  <!-- end of menu --> 
 	
 	<div  id="content">
@@ -40,11 +40,11 @@
 		<div id="weather_row1">
 			<div id="b_raw_1">
 				<input id="build_button_1" type="image" name="b_num" value="building_1" 
-src="../img/building_1.gif"/>
+src="../img/building_1.jpg"/>
 				<input id="build_button_2" type="image" name="b_num" value="building_2" 
-src="../img/building_2.gif"/> 
+src="../img/building_2.jpg"/> 
 				<input id="build_button_3" type="image" name="b_num" value="building_3" 
-src="../img/building_3.gif"/>
+src="../img/building_3.jpg"/>
 			</div>
 			
 		</div>
@@ -52,11 +52,11 @@ src="../img/building_3.gif"/>
 		<div id="weather_row2">	
 			<div id="b_raw_2">
 				<input id="build_button_4" type="image" name="b_num" value="building_4" 
-src="../img/building_4.gif"/>
+src="../img/building_4.jpg"/>
 				<input id="build_button_5" type="image" name="b_num" value="building_5" 
-src="../img/building_5.gif"/>
+src="../img/building_5.jpg"/>
 				<input id="build_button_6" type="image" name="b_num" value="building_6" 
-src="../img/building_6.gif"/>
+src="../img/building_6.jpg"/>
 			</div>
 			
 		</div>

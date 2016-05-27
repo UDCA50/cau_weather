@@ -1,12 +1,19 @@
 
-<meta charset="utf-8"/>
-<?
+<?php
            session_start();
 ?>
-<?
+
+<meta charset="utf-8"/>
+
+<?php
    // 이전화면에서 이름이 입력되지 않았으면 "이름을 입력하세요"
    // 메시지 출력
-   if(!$id) {
+   $id_log = $_POST['id_log'];
+   $pass = $_POST['pass'];
+
+
+   if(!$id_log) {
+
      echo("
            <script>
              window.alert('아이디를 입력하세요.')
@@ -27,12 +34,12 @@
    }
 
    include "../lib/dbconn.php";
+	$connect = $_SESSION['connect'];
 
-   $sql = "select * from member where id='$id'";
+   $sql = "select * from member where id='$id_log'";
+   
    $result = mysql_query($sql, $connect);
-
    $num_match = mysql_num_rows($result);
-
    if(!$num_match) 
    {
      echo("
@@ -47,7 +54,6 @@
         $row = mysql_fetch_array($result);
 
         $db_pass = $row[pass];
-
         if($pass != $db_pass)
         {
            echo("
