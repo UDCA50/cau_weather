@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@drawable/login_logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/join_agreementView"
+            android:onClick="join_aggr_Action"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/join_aggr"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/join_id">
+
+            <EditText
+                android:id = "@+id/join_id"
+                android:background="@null"
+                android:layout_width = "200dp"
+                android:layout_height = "40dp"
+                android:hint = "아이디"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/join_pass">
+            <EditText
+                android:id = "@+id/join_pass"
+                android:background="@null"
+                android:layout_width = "200dp"
+                android:layout_height = "40dp"
+                android:hint = "비밀번호"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/join_cat">
+                <Spinner
+                    android:id="@+id/join_cat"
+                    android:background="@null"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/join_gender">
+                <Spinner
+                    android:id="@+id/join_gender"
+                    android:background="@null"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/join_mail">
+            <EditText
+                android:id = "@+id/join_mail"
+                android:background="@null"
+                android:layout_width = "200dp"
+                android:layout_height = "40dp"
+                android:hint = "E-MAIL"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id = "@+id/join_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/join_btn">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:gravity="center">
+    </LinearLayout>
+</LinearLayout>

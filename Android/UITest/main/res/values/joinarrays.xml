@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="join_cat">
+        <item>학생</item>
+        <item>교직원</item>
+        <item>관리자</item>
+    </string-array>
+
+    <string-array name="join_gender">
+        <item>남자</item>
+        <item>여자</item>
+    </string-array>
+
+</resources>
