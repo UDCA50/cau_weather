@@ -1,5 +1,7 @@
 	
-	<?php
+	<?php session_start();
+		
+
 	function printable($connect_data, $sql_query){
 	
 			mysql_select_db("jung_db",$connect_data);
@@ -8,6 +10,7 @@
 			
 			echo "<div id='datasheet'>";
 			echo "<table>";
+			echo "<tbody>";
 			echo "<tr>";
 			echo "<td>번호</td>";
 			echo "<td>습도</td>";
@@ -24,12 +27,13 @@
 				$location    = $row[b_location];
 				$calcul_time    = $row[calcul_time];
 				echo "<tr><td>",$id , "</td>";
-				echo "<td>", $temper ,"</td>";
 				echo "<td>", $humid ,"</td>";
+				echo "<td>", $temper ,"</td>";
 				echo "<td>", $location, "</td>";
 				echo "<td>", $calcul_time, "</td>";
-				echo "</tr></table>";
+				echo "</tr>";
 			}	
+			echo"</tbody></table>";
 				//space for next table;
 				echo "&nbsp&nbsp";
 		

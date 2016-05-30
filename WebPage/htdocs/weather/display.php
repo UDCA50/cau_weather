@@ -44,7 +44,7 @@ media="all">
 			
 			<!-- access to Sensor Network-->	
 			<?php
-			$connect_data=mysql_connect( "localhost", "root", "carbon14");
+			$connect_data=mysql_connect( "localhost", "caunic", "carbon14");
 			mysql_select_db("jung_db",$connect_data);
 			
 			//make query
